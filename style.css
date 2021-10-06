@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fuentes */
+    --poppins: 'Poppins', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    /* Colores */
+    --color-principal: #1d3557;
+    --color-secundario: #457b9d;
+    --color-detalles: #98c1d9;
+    --blanco: #FFFFFF;
+}
+
+header {
+    background-color: var(--color-principal);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: var(--poppins);
+    font-weight: 800;
+    color: var(--blanco);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+nav .divisas a{
+    font-size: 15px;
+    font-family: var(--nunito);
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: var(--blanco);
+    list-style: none;
+    text-decoration: none;
+}
+
+.divisas li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+main {
+    font-size: var(--nunito);
+}
+
+img {
+   position: relative;
+   left: 31%;
+   bottom: -80px;
+   z-index: -1;
+   width: 500px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 20px auto;
+    background: #98c1d9;
+}
+
+.container-divisa {
+    background: pink;
+    width: 400px;
+    padding: 20px;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.texto {
+    display: block;
+    font-family: var(--poppins);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    background-color: var(--color-principal);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.credit {
+    font-family: var(--poppins);
+    letter-spacing: 1.5px;
+    color: var(--blanco);
+    text-decoration: none;
+    padding-bottom: 15px;
+}
