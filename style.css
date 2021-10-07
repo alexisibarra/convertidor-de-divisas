@@ -56,15 +56,15 @@ nav .divisas a{
     color: var(--blanco);
     text-align: center;
     background-color: var(--color-detalles);
-    max-width: 300px;
+    padding: 5px 10px;
+    width: 300px;
     height: 80px;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: -1;
     animation-name: bienvenida;
-    animation-duration: 5s;
+    animation-duration: 6s;
     transform: scaleX(0);
+    transform-origin: left;
 }
 
 @keyframes bienvenida {
