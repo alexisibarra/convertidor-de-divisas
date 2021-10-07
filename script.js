@@ -72,7 +72,6 @@ if (convertir == 1 || convertir == 'Pasar de pesos a dólares' || convertir == '
 const usuario = document.getElementById("usuario");
 const usuarioNuevo = usuarioSinCrear;
 
-
 let bienvenida = document.createElement("h3");
 bienvenida.innerHTML = `<p>¡Bienvenidx, ${usuarioNuevo}!</p>`;
 usuario.appendChild(bienvenida);

@@ -50,6 +50,37 @@ nav .divisas a{
     padding: 0 10px 0 10px;
 }
 
+#usuario {
+    font-family: var(--poppins);
+    font-size: 24px;
+    color: var(--blanco);
+    text-align: center;
+    background-color: var(--color-detalles);
+    max-width: 300px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    animation-name: bienvenida;
+    animation-duration: 5s;
+    transform: scaleX(0);
+}
+
+@keyframes bienvenida {
+    0% {
+        transform: scaleX(0);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
 main {
     font-size: var(--nunito);
 }
