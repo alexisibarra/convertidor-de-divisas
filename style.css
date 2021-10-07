@@ -85,9 +85,16 @@ img {
     padding-bottom: 10px;
 }
 
-.btn {
+.valores {
+    padding: 10px 0;
     text-align: center;
-    margin: 0 auto;
+}
+
+.btn {
+    font-family: monospace;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px;
 }
 
 

@@ -1,10 +1,11 @@
-// Variables
-const dolarChileno = 806;
-const dolarArgentino = 99;
-
 // Funciones
 const multiplicar = (a, b) => a * b; // a es peso y b es la cantidad de dolares 
 const dividir = (a, b) => a / b; // a es el monto total de pesos y b es el valor del dolar 
+
+// Variables
+const dolarChileno = 806;
+const dolarArgentino = 99;
+let usuarioSinCrear = prompt('¡Bienvenido! Por favor ingrese su nombre');
 
 // Pasar de pesos a dolar
 const pesoAdolar = () => {
@@ -56,6 +57,7 @@ const pesoApeso = () => {
 }
 
 
+// Selección de función
 let convertir = prompt('Seleccione que acción le gustaría hacer \n 1- Pasar de pesos a dólares \n 2- Pasar de dólares a pesos \n 3- Pasar de pesos a pesos');
 
 if (convertir == 1 || convertir == 'Pasar de pesos a dólares' || convertir == 'pasar de pesos a dolares' || convertir == 'pasar de pesos a dólares') {
@@ -65,3 +67,13 @@ if (convertir == 1 || convertir == 'Pasar de pesos a dólares' || convertir == '
 } else if (convertir == 3 || convertir == 'Pasar de pesos a pesos' || convertir == 'pasar de pesos a pesos') {
     pesoApeso();
 }
+
+// DOM
+const usuario = document.getElementById("usuario");
+const usuarioNuevo = usuarioSinCrear;
+
+
+let bienvenida = document.createElement("h3");
+bienvenida.innerHTML = `<p>¡Bienvenidx, ${usuarioNuevo}!</p>`;
+usuario.appendChild(bienvenida);
+
