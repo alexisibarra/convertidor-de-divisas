@@ -6,8 +6,8 @@
 
 :root {
     /* Fuentes */
-    --poppins: 'Poppins', sans-serif;
-    --nunito: 'Nunito Sans', sans-serif;
+    --encabezado: 'Forum', sans-serif;
+    --cuerpo: 'Oswald', sans-serif;
     /* Colores */
     --color-principal: #1d3557;
     --color-secundario: #457b9d;
@@ -15,9 +15,20 @@
     --blanco: #FFFFFF;
 }
 
+
+#container {
+    width: 470px;
+    height: 500px;
+    margin: 62px auto;
+    border-radius: 30px;
+    background: var(--color-principal);
+}
+
+/* Inicio Header */
 header {
-    background-color: var(--color-principal);
     height: 100px;
+    padding-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +37,7 @@ header {
 
 h1 {
     font-size: 28px;
-    font-family: var(--poppins);
+    font-family: var(--encabezado);
     font-weight: 800;
     color: var(--blanco);
     letter-spacing: 3px;
@@ -35,23 +46,118 @@ h1 {
     padding: 12px 0;
 }
 
-nav .divisas a{
+.divisas {
+    text-align: center;
+}
+
+.opciones {
     font-size: 15px;
-    font-family: var(--nunito);
+    font-family: var(--cuerpo);
     font-weight: 500;
     letter-spacing: 1.2px;
     color: var(--blanco);
     list-style: none;
     text-decoration: none;
+    display: inline;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
 }
 
-.divisas li {
-    display: inline;
-    padding: 0 10px 0 10px;
+.opciones::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+
+    transition: 1.7s all;
+    transform: scaleX(0);
+    transform-origin: left;
 }
+
+.opciones:hover::before {
+    transform: scaleX(1);
+}
+/* Fin Header */
+
+/* Inicio Convertidor */
+.informacion {
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cantidad, #convertir {
+    padding: 8px;
+    margin: 0 10px;
+    font-family: var(--cuerpo);
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+#cantidad {
+    width: 220px;
+    text-align: center;
+}
+
+#convertir {
+    background-color: var(--color-principal);
+    border-color: var(--blanco);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+#convertir:hover{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+
+}
+/* Fin Convertidor */
+
+/* Inicio Resultado */
+
+
+
+/* Fin Resultado */
+
+.valores {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.btn {
+    font-family: monospace;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--color-principal);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.credit {
+    font-family: var(--encabezado);
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--blanco);
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+
 
 #usuario {
-    font-family: var(--poppins);
+    font-family: var(--encabezado);
     font-size: 24px;
     color: var(--blanco);
     text-align: center;
@@ -79,69 +185,4 @@ nav .divisas a{
     100% {
         transform: scaleX(0);
     }
-}
-
-main {
-    font-size: var(--nunito);
-}
-
-img {
-   position: relative;
-   left: 31%;
-   bottom: -80px;
-   z-index: -1;
-   width: 500px;
-}
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    margin: 20px auto;
-    background: #98c1d9;
-}
-
-.container-divisa {
-    background: pink;
-    width: 400px;
-    padding: 20px;
-    margin: 12px auto;
-    text-align: center;
-}
-
-.texto {
-    display: block;
-    font-family: var(--poppins);
-    font-weight: 400;
-    padding-bottom: 10px;
-}
-
-.valores {
-    padding: 10px 0;
-    text-align: center;
-}
-
-.btn {
-    font-family: monospace;
-    text-align: center;
-    margin: 5px auto;
-    padding: 10px;
-}
-
-
-
-footer {
-    background-color: var(--color-principal);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.credit {
-    font-family: var(--poppins);
-    letter-spacing: 1.5px;
-    color: var(--blanco);
-    text-decoration: none;
-    padding-bottom: 15px;
 }
