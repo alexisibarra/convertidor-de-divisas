@@ -16,40 +16,40 @@
     <title>Convertidor de Divisas</title>
 </head>
 <body>
-    <header>
-        <h1>CONVERTIDOR DE DIVISAS</h1>
-        <nav>
-            <ul class="divisas">
-                <li class="pesosAdolar"><a href="#">Pesos a Dólares</a></li>
-                <li class="dolarApesos"><a href="#">Dólares a Pesos</a></li>
-                <li class="pesosApesos"><a href="#">Pesos a Pesos</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div id="usuario"></div>
 
     <section id="container">
+        <header>
+            <h1>CONVERTIDOR DE DIVISAS</h1>
+            <hr>
+            <ul class="moneda">
+                <li id="peso-arg" class="pesos">Peso Argentino</li>
+                <li id="peso-ch" class="pesos">Peso Chileno</li>
+            </ul>
 
-        <div class="container-divisa">
-            <p class="texto">AGREGAR VALOR A CONVERTIR</p>
-            <input type="text" id="valor-1" class="valores">
+            <nav>
+                <ul class="divisas">
+                    <li id="opcion-1" class="opciones">Pesos a Dólares</li>
+                    <li id="opcion-2" class="opciones">Dólares a Pesos</li>
+                    <li id="opcion-3" class="opciones">Pesos a Pesos</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="informacion">
+            <input id="cantidad" type="text" placeholder="Ingrese la cantidad a convertir">
+            <button id="convertir">Convertir</button>
         </div>
-
-        <div class="container-divisa">
-            <p class="texto">EL TOTAL ES</p>
-            <input type="text" id="valor-2" class="valores">
+        <div id="resultado">
+            <hr>
+            <div>
+                <p>$500000 pesos son:</p>
+                <p id="valor-convertido">$100000 pesos</p>
+            </div>
         </div>
-
-        <button class="btn">Convertir</button>
         
+        <p class="credit">Desarrollado por <a href="https://www.linkedin.com/in/-michellenj/" class="credit">Michelle Navarrete</a></p>
     </section>
 
-    <footer>
-        <a class="credit" href="https://www.linkedin.com/in/-michellenj/" target="_blank">Desarrollado por Michelle Navarrete</a>
-    </footer>
-
-    <!-- JS -->
     <!-- <script src="script.js"></script> -->
 </body>
 </html>

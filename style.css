@@ -11,10 +11,13 @@
     /* Colores */
     --color-principal: #1d3557;
     --color-secundario: #457b9d;
-    --color-detalles: #98c1d9;
+    --color-detalles: #cde3f0;
     --blanco: #FFFFFF;
 }
 
+body {
+    background-color: var(--color-detalles);
+}
 
 #container {
     width: 470px;
@@ -22,11 +25,12 @@
     margin: 62px auto;
     border-radius: 30px;
     background: var(--color-principal);
+    box-shadow: 0 0 18px var(--color-secundario);
 }
 
 /* Inicio Header */
 header {
-    height: 100px;
+    height: 150px;
     padding-top: 20px;
     margin-bottom: 40px;
     display: flex;
@@ -45,13 +49,22 @@ h1 {
     text-align: center;
     padding: 12px 0;
 }
-
-.divisas {
+hr {
+    width: 70%;
     text-align: center;
 }
 
-.opciones {
-    font-size: 15px;
+.moneda, .pesos {
+    padding: 8px 5px 15px 5px;
+}
+
+.divisas, .moneda {
+    text-align: center;
+}
+
+.opciones, .pesos {
+    position: relative;
+    font-size: 18px;
     font-family: var(--cuerpo);
     font-weight: 500;
     letter-spacing: 1.2px;
@@ -60,7 +73,6 @@ h1 {
     text-decoration: none;
     display: inline;
     margin: 0 5px;
-    position: relative;
     cursor: pointer;
 }
 
@@ -120,10 +132,47 @@ h1 {
 /* Fin Convertidor */
 
 /* Inicio Resultado */
+#resultado {
+    font-family: var(--cuerpo);
+    font-size: 24px;
+    color: var(--blanco);
+    text-align: center;
+    width: 320px;
+    margin: 15px auto;
+    padding: 15px 8px;
+}
 
+#resultado hr {
+    width: 100%;
+}
 
+#resultado p {
+    padding-top: 20px;
+}
 
+#valor-convertido {
+    padding-top: 0;
+    font-size: 28px;
+}
 /* Fin Resultado */
+
+.credit {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--blanco);
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
 
 .valores {
     padding: 10px 0;
@@ -145,14 +194,6 @@ footer {
     align-items: flex-end;
 }
 
-.credit {
-    font-family: var(--encabezado);
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--blanco);
-    text-decoration: none;
-    padding-bottom: 15px;
-}
 
 
 
