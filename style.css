@@ -154,6 +154,10 @@ hr {
     padding-top: 0;
     font-size: 28px;
 }
+
+#convertir {
+    display: inline;
+}
 /* Fin Resultado */
 
 .credit {

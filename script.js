@@ -26,13 +26,18 @@ let convertirAmoneda = document.getElementById("opcion-3");
 convertirAmoneda.onclick = () => {accionConvertir = "Pesos a pesos";}
 
 
-// Conseguir datos
+// Conseguir datos y mostrar resultado
 let cantidad = 0;
+let valorConvertido = 0;
 
 let cantidadAConvertir = document.getElementById("cantidad");
-cantidadAConvertir.onchange = () => { cantidad = cantidadAConvertir.value}
+cantidadAConvertir.onchange = () => {cantidad = cantidadAConvertir.value;}
 
 
 // Conseguir resultado
 let convertidor = document.getElementById("convertir");
-convertidor = addEventListener("click", convertir);
+convertidor.addEventListener("click", convertir);
+
+
+//  ------------ DOM
+//let resultadoFinal = document.getElementById("resultado");
